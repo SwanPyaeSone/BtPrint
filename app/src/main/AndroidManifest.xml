@@ -17,8 +17,12 @@
         android:theme="@style/AppTheme">
         <activity android:name=".BTDiscovery">
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name="com.codeflight.ritik.btprint.MainActivity">
             <intent-filter>
+                  android:name="android.intent.action.SEND" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="text/*" />
+			</intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
